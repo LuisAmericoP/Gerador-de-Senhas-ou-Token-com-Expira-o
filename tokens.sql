@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS token_db;
+USE token_db;
+
+CREATE TABLE tokens (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  token VARCHAR(255) NOT NULL,
+  criado_em DATETIME NOT NULL,
+  expirado_em DATETIME NOT NULL
+);
